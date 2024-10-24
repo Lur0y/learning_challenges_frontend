@@ -1,8 +1,8 @@
 import Square from './Square';
 import { useEffect, useState } from 'react';
-import { TURN } from './../../logic/TicTacToe/const.js';
-import WinnerModal from './WinnerModal.jsx';
-import styles from './../../styles/TictacToe.module.scss';
+import { TURN } from '@/logic/TicTacToe/const.js';
+import WinnerModal from '@/components/TicTacToe/WinnerModal.jsx';
+import styles from '@/styles/TicTacToe/TictacToe.module.scss';
 
 export default function Game({board, setBoard, dim}){
 
