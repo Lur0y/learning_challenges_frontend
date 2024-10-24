@@ -1,7 +1,8 @@
-import Square from './../components/Square';
+import Square from './Square';
 import { useEffect, useState } from 'react';
-import { TURN } from './../const.js';
+import { TURN } from './../../logic/TicTacToe/const.js';
 import WinnerModal from './WinnerModal.jsx';
+import styles from './../../styles/TictacToe.module.scss';
 
 export default function Game({board, setBoard, dim}){
 
@@ -99,15 +100,15 @@ export default function Game({board, setBoard, dim}){
 
 	return (
 		<>
-			<main className='board'>
+			<main className={styles['board']}>
 				<h1>Gato</h1>
-				<section className='game' style={{gridTemplateColumns: `repeat(${dim}, 1fr)`}}>
+				<section className={styles['game']} style={{gridTemplateColumns: `repeat(${dim}, 1fr)`}}>
 					{
 						board.map((element, row) => (
 							element.map((e, col) => (
 								<Square 
                                     key={`row-${row}-col-${col}`} 
-                                    className={`row-${row}-col-${col}`} 
+                                    className={`styles.row-${row}-col-${col}`} 
                                     updateBoard={() => {updateBoard(row, col);}}
                                 >{e}</Square>
 							))
@@ -115,7 +116,7 @@ export default function Game({board, setBoard, dim}){
 					}
 				</section>
 
-				<section className='turn'>
+				<section className={styles['turn']}>
 					<Square isSelected={turn == TURN.x}>{TURN.x}</Square>
 					<Square isSelected={turn == TURN.o}>{TURN.o}</Square>
 				</section>

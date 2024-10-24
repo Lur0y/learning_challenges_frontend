@@ -1,13 +1,14 @@
 import Square from "./Square";
+import styles from './../../styles/TictacToe.module.scss';
 
 export default function WinnerModal({winnerText, winner}){
 
     return(
         <>
-            <section className='winner'>
-                <div className='text'>
+            <section className={styles['styles.winner']}>
+                <div className={styles['styles.text']}>
                     <h2>{winnerText}</h2>
-                    <header className='win'>
+                    <header className={styles['styles.win']}>
                         {winner && <Square>{winner}</Square>}
                     </header>
                     <footer>
