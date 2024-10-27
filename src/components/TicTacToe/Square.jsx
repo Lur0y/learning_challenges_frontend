@@ -1,4 +1,4 @@
-import styles from './../../styles/TictacToe.module.scss';
+import styles from '@/styles/TicTacToe/TictacToe.module.scss';
 
 export default function Square({children, updateBoard, className, isSelected}){
 

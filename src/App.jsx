@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import TicTacToe from "./pages/TicTacToe";
-import Home from "./pages/Home";
-import FollowCursor from "./pages/FollowCursor";
+import TicTacToe from "@/pages/TicTacToe";
+import Home from "@/pages/Home";
+import FollowCursor from "@/pages/FollowCursor";
 
 export default function App() {
 	

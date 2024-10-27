@@ -1,5 +1,5 @@
-import Square from "./Square";
-import styles from './../../styles/TictacToe.module.scss';
+import Square from "@/components/TicTacToe/Square";
+import styles from '@/styles/TicTacToe/TictacToe.module.scss';
 
 export default function WinnerModal({winnerText, winner}){
 

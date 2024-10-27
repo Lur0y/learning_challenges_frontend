@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Game from "../components/TicTacToe/Game";
-import styles from './../styles/TictacToe.module.scss';
+import Game from "@/components/TicTacToe/Game";
+import styles from '@/styles/TicTacToe/TictacToe.module.scss';
 
 export default function TicTacToe(){
 
