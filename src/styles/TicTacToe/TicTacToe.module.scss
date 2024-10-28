@@ -7,7 +7,6 @@
 
 	color-scheme: light dark;
 	color: rgba(255, 255, 255, 0.87);
-	background-color: #242424;
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
@@ -15,10 +14,7 @@
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-text-size-adjust: 100%;
 
-	width: 100vw;
 	max-width: 100%;
-	height: 100vh;
-	max-height: 100%;
 	margin: 0;
 	
 	.board{
@@ -92,54 +88,6 @@
 	
 	}
 	
-	.winner{
-	
-		position: absolute;
-		width: 100vw;
-		height: 100vh;
-		top: 0;
-		left: 0;
-		display: grid;
-		place-items: center;
-		background-color: rgba(0, 0, 0, 0.7);
-	
-		.square{
-	
-			width: 70px;
-			height: 70px;
-			pointer-events: none;
-			border-color: transparent;
-	
-		}
-	
-		.text{
-	
-			background: #111;
-			height: 300px;
-			width: 320px;
-			border: 2px solid #eee;
-			border-radius: 10px;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			gap: 20px;
-	
-		}
-	
-		.win{
-	
-			margin: 0 auto;
-			width: fit-content;
-			border: 2px solid #eee;
-			border-radius: 10px;
-			display: flex;
-			gap: 15px;
-		
-		}
-	
-	}
-	
 	.square{
 	
 		width: 100px;
@@ -199,4 +147,52 @@
 	
 	}
 	
+}
+
+.winner{
+	
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	display: grid;
+	place-items: center;
+	background-color: rgba(0, 0, 0, 0.7);
+
+	.square{
+
+		width: 70px;
+		height: 70px;
+		pointer-events: none;
+		border-color: transparent;
+
+	}
+
+	.text{
+
+		background: #111;
+		height: 300px;
+		width: 320px;
+		border: 2px solid #eee;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+
+	}
+
+	.win{
+
+		margin: 0 auto;
+		width: fit-content;
+		border: 2px solid #eee;
+		border-radius: 10px;
+		display: flex;
+		gap: 15px;
+	
+	}
+
 }

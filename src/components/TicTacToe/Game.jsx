@@ -101,7 +101,6 @@ export default function Game({board, setBoard, dim}){
 	return (
 		<>
 			<main className={styles['board']}>
-				<h1>Gato</h1>
 				<section className={styles['game']} style={{gridTemplateColumns: `repeat(${dim}, 1fr)`}}>
 					{
 						board.map((element, row) => (
